@@ -798,18 +798,15 @@
     <!-- ======= Footer ======= -->
     <footer id="footer">
         <div class="container">
-            <h3>Brandon Johnson</h3>
-            <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi
-                placeat.</p>
+            <h3>Giovanni Pio Martello</h3>
+            <p>IT Specialist &amp; Web Developer.</p>
             <div class="social-links">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://twitter.com/vanni_m04" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.facebook.com/vanni.m04" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/vanni.m04/" class="instagram"><i class="bx bxl-instagram"></i></a>
             </div>
             <div class="copyright">
-                &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>GPMartello's Portfolio</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->
