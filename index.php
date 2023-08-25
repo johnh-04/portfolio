@@ -113,6 +113,7 @@
                                 </ul>
                             </div>
                         </div>
+                        <h5>Something about me...</h5>
                         <p> 
                             Currently I'm a computer engineering student and I graduated high school with honors (I studied programming and networks). I am a web developer specializing in backend development (PHP) but during my career I learned to use different languages ​​such as C, Java, Javascript and Python and I have developed desktop, mobile and web applications. In addition to fundamental knowledge in cybersecurity I also have the ability to design and manage MySQL databases. For passion, since I was little, I have dedicated myself to video editing through Sony Vegas.
                         </p>
