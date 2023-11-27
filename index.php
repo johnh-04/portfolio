@@ -71,9 +71,9 @@
             <h1>Giovanni Pio Martello</h1>
             <p>I'm a <span class="typed" data-typed-items="Web Developer, Freelancer, Computer Engineering Student"></span></p>
             <div class="social-links">
-                <a href="https://twitter.com/vanni_m04" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="https://www.facebook.com/vanni.m04" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/vanni.m04/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://twitter.com/vanni_m04" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.facebook.com/vanni.m04" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/vanni.m04/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
             </div>
         </div>
     </section><!-- End Hero -->
@@ -89,10 +89,10 @@
                     <p>Some information about me.</p>
                 </div>
 
-                <div class="row">
-                    <div class="col-lg-4">
+                <div class="row justify-content-center">
+                    <!--<div class="col-lg-4">
                         <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
-                    </div>
+                    </div>-->
                     <div class="col-lg-8 pt-4 pt-lg-0 content">
                         <h3>IT Specialist &amp; Web Developer.</h3>
                         <div class="row mt-4">
@@ -106,14 +106,14 @@
                             </div>
                             <div class="col-lg-6">
                                 <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>18</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                                     <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Secondary School Diploma in IT</span></li>
                                     <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>vannimart74@gmail.com</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Fee:</strong> <span>$15-$20/hr</span></li>
                                 </ul>
                             </div>
                         </div>
-                        <h5>Something about me...</h5>
+                        <h5 class="mt-3">Something about me...</h5>
                         <p> 
                             Currently I'm a computer engineering student and I graduated high school with honors (I studied programming and networks). I am a web developer specializing in backend development (PHP) but during my career I learned to use different languages ​​such as C, Java, Javascript and Python and I have developed desktop, mobile and web applications. In addition to fundamental knowledge in cybersecurity I also have the ability to design and manage MySQL databases. For passion, since I was little, I have dedicated myself to video editing through Sony Vegas.
                         </p>
@@ -198,9 +198,9 @@
                         </div>
 
                         <div class="progress">
-                            <span class="skill">JS & Node.js <i class="val">60%</i></span>
+                            <span class="skill">JS & Node.js <i class="val">65%</i></span>
                             <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
