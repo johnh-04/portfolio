@@ -69,7 +69,7 @@
     <section id="hero" class="d-flex flex-column justify-content-center">
         <div class="container" data-aos="zoom-in" data-aos-delay="100">
             <h1>Giovanni Pio Martello</h1>
-            <p>I'm a <span class="typed" data-typed-items="Web Developer, Freelancer, Computer Engineering Student"></span></p>
+            <p>I'm a <span class="typed" data-typed-items="Web Developer, Freelancer, Computer Engineering student"></span></p>
             <div class="social-links">
                 <a href="https://twitter.com/vanni_m04" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
                 <a href="https://www.facebook.com/vanni.m04" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
@@ -90,9 +90,9 @@
                 </div>
 
                 <div class="row justify-content-center">
-                    <!--<div class="col-lg-4 justify-content-center">
+                    <div class="col-lg-4 justify-content-center">
                         <img src="assets/img/banner.png" class="img-fluid w-75" alt="">
-                    </div>-->
+                    </div>
                     <div class="col-lg-8 pt-4 pt-lg-0 content">
                         <h3>IT Specialist &amp; Web Developer.</h3>
                         <div class="row mt-4">
