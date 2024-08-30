@@ -49,17 +49,13 @@
 
         <nav id="navbar" class="navbar nav-menu">
             <ul>
-                <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a>
-                </li>
+                <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
                 <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-                <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a>
-                </li>
-                <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
-                        <span>Portfolio</span></a></li>
-                <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a>
-                </li>
-                <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a>
-                </li>
+                <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-briefcase"></i> <span>Skills</span></a></li>
+                <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+                <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i><span>Portfolio</span></a></li>
+                <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+                <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
             </ul>
         </nav><!-- .nav-menu -->
 
@@ -71,7 +67,7 @@
             <h1>Giovanni Pio Martello</h1>
             <p>I'm a <span class="typed" data-typed-items="Web Developer, Freelancer, Computer Engineering student"></span></p>
             <div class="social-links">
-                <a href="https://twitter.com/vanni_m04" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+                <a href="https://x.com/vanni_m04" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
                 <a href="https://www.facebook.com/vanni.m04" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
                 <a href="https://www.instagram.com/vanni.m04/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
             </div>
@@ -90,10 +86,10 @@
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-lg-4 justify-content-center">
+                    <!--<div class="col-lg-4 justify-content-center">
                         <img src="assets/img/banner.png" class="img-fluid w-75" alt="">
-                    </div>
-                    <div class="col-lg-8 pt-4 pt-lg-0 content">
+                    </div>-->
+                    <div class=" pt-4 pt-lg-0 content">
                         <h3>IT Specialist &amp; Web Developer.</h3>
                         <div class="row mt-4">
                             <div class="col-lg-6">
@@ -102,21 +98,20 @@
                                     <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <a href="https://centaurinet.com/" target="_blank" style="color: #000"><span>centaurinet.com</span></a></li>
                                     <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+39 377 549 2347</span></li>
                                     <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Mola di Bari (BA), Italy</span></li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                                     <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Secondary School Diploma in IT</span></li>
                                     <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>vannimart74@gmail.com</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Fee:</strong> <span>$15-$20/hr</span></li>
                                 </ul>
                             </div>
+                            <div class="col-lg-6 text-center">
+                                <h5 class="mt-3">Something about me...</h5>
+                                <p> 
+                                    Hi everyone, let me introduce myself, my name is Giovanni Pio but everyone calls me Vanni.
+                                    I am a student of computer science and automation engineering at the Polytechnic of Bari. I finished high school in 2023, graduating with honors, where I had the opportunity to delve into different sides of computer science, telecommunications and networks. Among the various fields I prefer web programming (server-side applications, PHP & MySQL) but i have also studied algorithms and data structures with Java, 
+                                    I dealt with using C up to higher level languages such as JavaScript (and its frameworks) and Python.
+                                </p>
+                            </div>
                         </div>
-                        <h5 class="mt-3">Something about me...</h5>
-                        <p> 
-                            Currently I'm a computer engineering student and I graduated high school with honors (I studied programming and networks). I am a web developer specializing in backend development (PHP) but during my career I learned to use different languages ​​such as C, Java, Javascript and Python and I have developed desktop, mobile and web applications. In addition to fundamental knowledge in cybersecurity I also have the ability to design and manage MySQL databases. For passion, since I was little, I have dedicated myself to video editing through Sony Vegas.
-                        </p>
+                        
                     </div>
                 </div>
 
@@ -212,9 +207,9 @@
                         </div>
 
                         <div class="progress">
-                            <span class="skill">Py & Flask<i class="val">50%</i></span>
+                            <span class="skill">Py & Flask<i class="val">40%</i></span>
                             <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
@@ -263,44 +258,103 @@
 
                 <div class="section-title">
                     <h2>Resume</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <p>
+                        Here you can find more information about me.
+                    </p>
                 </div>
 
                 <div class="row">
+
                     <div class="col-lg-6">
                         <h3 class="resume-title">Sumary</h3>
                         <div class="resume-item pb-0">
-                            <h4>Brandon Johnson</h4>
-                            <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing
-                                    and developing user-centered digital/print marketing material from initial concept
-                                    to final, polished deliverable.</em></p>
+                            <h4>Giovanni Pio Martello</h4>
+                            <p><em>IT Specialist & Web Developer</em></p>
                             <ul>
-                                <li>Portland par 127,Orlando, FL</li>
-                                <li>(123) 456-7891</li>
-                                <li>alice.barkley@example.com</li>
+                                <li>Mola di Bari (BA), Italy</li>
+                                <li>+39 377 549 2347</li>
+                                <li>vannimart74@gmail.com</li>
                             </ul>
                         </div>
-
                         <h3 class="resume-title">Education</h3>
                         <div class="resume-item">
-                            <h4>Master of Fine Arts &amp; Graphic Design</h4>
-                            <h5>2015 - 2016</h5>
-                            <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-                            <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero
-                                voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+                            <h4>High School Diploma</h4>
+                            <h5>2018 - 2023</h5>
+                            <p><em>IISS Luigi dell'Erba, Castellana Grotte (BA), Italy</em></p>
+                            <p>
+                                Field of study: Computer Science and Telecommunications
+                            </p>
+                            <p>
+                                Final Grade: 100 with honors
+                            </p>
                         </div>
                         <div class="resume-item">
-                            <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-                            <h5>2010 - 2014</h5>
-                            <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-                            <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel
-                                ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae
-                                consequatur neque etlon sader mart dila</p>
+                            <h4>Bachelor's Degree in Computer Science and Automation engineering</h4>
+                            <h5>2023 - now</h5>
+                            <p><em>Polytechnic of Bari, Bari (BA), Italy</em></p>
+                            <p>
+                                Field of study: Automation
+                            </p>
+                        </div>
+                        <h3 class="resume-title">Language Skills</h3>
+                        <!--<ul>
+                            <li>Native Language: Italian</li>
+                            <li>Other: French</li>
+                        </ul>-->
+                        <div class="resume-item">
+                            <h4>B2 First (FCE)</h4>
+                            <h5>2023</h5>
+                            <p><em>Cambridge English</em></p>
                         </div>
                     </div>
+
                     <div class="col-lg-6">
+                        <h3 class="resume-title">Certifications and Experiences</h3>
+                        <div class="resume-item">
+                            <h4>"Introduction to CyberSecurity"</h4>
+                            <h5>2020</h5>
+                            <p><em>Cisco Networking Academy</em></p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>"Cisco CyberSecurity Scholarship"</h4>
+                            <h5>2021</h5>
+                            <p><em>Cisco Networking Academy</em></p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>"IoT Fundamentals"</h4>
+                            <h5>2022</h5>
+                            <p><em>Cisco Networking Academy</em></p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>"CyberChallenge"</h4>
+                            <h5>2022</h5>
+                            <p><em>Cybersecurity National Laboratory</em></p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Internship</h4>
+                            <h5>2022</h5>
+                            <p><em>Eulogic SRL, Bari (BA)</em></p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>"NSE 1 & 2"</h4>
+                            <h5>2022</h5>
+                            <p><em>Fortinet Training Institute</em></p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>"ICDL: IT Security"</h4>
+                            <h5>2023</h5>
+                            <p><em>AICA</em></p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>"Introduction to Generative AI Learning Path"</h4>
+                            <h5>now</h5>
+                            <p><em>Google</em></p>
+                        </div>
+                    </div>
+
+                    <h4 class="mt-4">You can find the entire resume by following this <a href="assets/GiovanniPioMartello_CV.pdf" download="">link</a></h4>
+
+                    <!--<div class="col-lg-6">
                         <h3 class="resume-title">Professional Experience</h3>
                         <div class="resume-item">
                             <h4>Senior graphic design specialist</h4>
@@ -330,7 +384,7 @@
                                     managers</li>
                             </ul>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
 
             </div>
