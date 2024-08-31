@@ -98,7 +98,7 @@
                                     <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <a href="https://centaurinet.com/" target="_blank" style="color: #000"><span>centaurinet.com</span></a></li>
                                     <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+39 377 549 2347</span></li>
                                     <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Mola di Bari (BA), Italy</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Secondary School Diploma in IT</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>High School Diploma in IT</span></li>
                                     <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>vannimart74@gmail.com</span></li>
                                 </ul>
                             </div>
@@ -396,17 +396,19 @@
 
                 <div class="section-title">
                     <h2>Portfolio</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <p>
+                        These are some of the projects I have developed.
+                        <br>
+                        (They are not optimized for mobile devices)
+                    </p>
                 </div>
 
                 <div class="row">
                     <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
                         <ul id="portfolio-flters">
                             <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-app">App</li>
-                            <li data-filter=".filter-card">Card</li>
+                            <!--<li data-filter=".filter-app">App</li>
+                            <li data-filter=".filter-card">Card</li>-->
                             <li data-filter=".filter-web">Web</li>
                         </ul>
                     </div>
@@ -414,18 +416,17 @@
 
                 <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                            <img src="assets/img/portfolio/astrophone.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
-                                <h4>App 1</h4>
-                                <p>App</p>
+                                <h4>AstroPhone</h4>
+                                <p>E-Commerce</p>
                                 <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" class="portfolio-details-lightbox"
-                                        data-glightbox="type: external" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
+                                    <a href="assets/img/portfolio/astrophone.jpg" data-gallery="portfolioGallery"
+                                        class="portfolio-lightbox" title="Example of a website for an e-commerce"><i class="bx bx-plus"></i></a>
+                                    <a href="https://www.martellogiovannipio.altervista.org/astrophone" class="portfolio-details-lightbox"
+                                        data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -433,50 +434,15 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                            <img src="assets/img/portfolio/quiz.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
-                                <h4>Web 3</h4>
-                                <p>Web</p>
+                                <h4>Silly Love Quiz</h4>
+                                <p>Quiz Game</p>
                                 <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" class="portfolio-details-lightbox"
-                                        data-glightbox="type: external" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>App 2</h4>
-                                <p>App</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" class="portfolio-details-lightbox"
-                                        data-glightbox="type: external" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Card 2</h4>
-                                <p>Card</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" class="portfolio-details-lightbox"
-                                        data-glightbox="type: external" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
+                                    <a href="assets/img/portfolio/quiz.jpg" data-gallery="portfolioGallery"
+                                        class="portfolio-lightbox" title="Example of a quiz game"><i class="bx bx-plus"></i></a>
+                                    <a href="https://www.martellogiovannipio.altervista.org/quiz" class="portfolio-details-lightbox"
+                                        data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -484,67 +450,15 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+                            <img src="assets/img/portfolio/greenco.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
-                                <h4>Web 2</h4>
-                                <p>Web</p>
+                                <h4>GreenCo</h4>
+                                <p>Ecological Company</p>
                                 <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" class="portfolio-details-lightbox"
-                                        data-glightbox="type: external" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>App 3</h4>
-                                <p>App</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" class="portfolio-details-lightbox"
-                                        data-glightbox="type: external" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Card 1</h4>
-                                <p>Card</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" class="portfolio-details-lightbox"
-                                        data-glightbox="type: external" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Card 3</h4>
-                                <p>Card</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" class="portfolio-details-lightbox"
-                                        data-glightbox="type: external" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
+                                    <a href="assets/img/portfolio/greenco.jpg" data-gallery="portfolioGallery"
+                                        class="portfolio-lightbox" title="Example of a website for an ecological company"><i class="bx bx-plus"></i></a>
+                                    <a href="https://www.martellogiovannipio.altervista.org/greenco" class="portfolio-details-lightbox"
+                                        data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -552,16 +466,31 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+                            <img src="assets/img/portfolio/universal.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
-                                <h4>Web 3</h4>
-                                <p>Web</p>
+                                <h4>Autoservizi Universal</h4>
+                                <p>Public Transport</p>
                                 <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
-                                        class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" class="portfolio-details-lightbox"
-                                        data-glightbox="type: external" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
+                                    <a href="assets/img/portfolio/universal.jpg" data-gallery="portfolioGallery"
+                                        class="portfolio-lightbox" title="Example of a website for public transport"><i class="bx bx-plus"></i></a>
+                                    <a href="https://www.martellogiovannipio.altervista.org/universal" class="portfolio-details-lightbox"
+                                        data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/xnews.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>xNews</h4>
+                                <p>Online Forum</p>
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/xnews.jpg" data-gallery="portfolioGallery"
+                                        class="portfolio-lightbox" title="Example of an online forum"><i class="bx bx-plus"></i></a>
+                                    <a href="https://www.martellogiovannipio.altervista.org/xnews" class="portfolio-details-lightbox"
+                                        data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                                 </div>
                             </div>
                         </div>
