@@ -391,7 +391,7 @@
                             </div>
                         </div>
 
-                        <h4 class="mt-4">You can find the entire resume by following this <a href="assets/GiovanniPioMartello_CV.pdf" download="">link</a></h4>
+                        <h4 class="mt-4">You can find the entire resume by following this <a href="assets/GiovanniPioMartello_CV.pdf" target="_blank">link</a></h4>
 
                         <!--<div class="col-lg-6">
                             <h3 class="resume-title">Professional Experience</h3>
@@ -754,7 +754,8 @@
                                     <div class="error-message"></div>
                                     <div class="sent-message">Your message has been sent. Thank you!</div>
                                 </div>
-                                <div class="text-center"><button type="submit">Send Message</button></div>
+                                <div class="text-center"><button type="submit" disabled>Send Message</button></div>
+                                <div class="text-center mt-2"><p>Work in progress!</p></div>
                             </form>
 
                         </div>
