@@ -26,6 +26,8 @@
         <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
         <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
         <!-- Template Main CSS File -->
         <link href="assets/css/style.css" rel="stylesheet">
 
@@ -46,9 +48,9 @@
                     <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
                     <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-briefcase"></i><span>Skills</span></a></li>
                     <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i><span data-i18n="nav.resume">Resume</span></a></li>
-                    <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i><span>Portfolio</span></a></li>
+                    <!--<li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i><span>Portfolio</span></a></li>-->
                     <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i><span data-i18n="nav.services">Services</span></a></li>
-                    <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i><span data-i18n="nav.contact">Contact</span></a></li>
+                    <!--<li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i><span data-i18n="nav.contact">Contact</span></a></li>-->
                 </ul>
             </nav><!-- .nav-menu -->
 
@@ -58,7 +60,7 @@
         <section id="hero" class="d-flex flex-column justify-content-center">
             <div class="language-switcher">
                 <button onclick="setLanguage('en')" id="en" style="display: none">EN</button>
-                <button onclick="setLanguage('it')" id="it">IT</button>
+                <button onclick="setLanguage('it')" id="it" disabled>IT</button>
             </div>
             <div class="container" data-aos="zoom-in" data-aos-delay="100">
                 <h1>Giovanni Pio Martello</h1>
@@ -75,99 +77,91 @@
 
             <!-- ======= About Section ======= -->
             <section id="about" class="about">
-                <div class="container" data-aos="fade-up">
+                <div class="container" data-aos="fade-up"></div>
 
                     <div class="section-title">
                         <h2>About</h2>
-                        <p>Some information about me.</p>
                     </div>
-
-                    <div class="row justify-content-center">
-                        <!--<div class="col-lg-4 justify-content-center">
-                            <img src="assets/img/banner.png" class="img-fluid w-75" alt="">
-                        </div>-->
-                        <div class=" pt-4 pt-lg-0 content">
-                            <h3>IT Specialist &amp; Web Developer.</h3>
-                            <div class="row mt-4">
-                                <div class="col-lg-6">
-                                    <ul>
-                                        <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>29 October 2004</span></li>
-                                        <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <a href="https://centaurinet.com/" target="_blank" style="color: #000"><span>centaurinet.com</span></a></li>
-                                        <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+39 377 549 2347</span></li>
-                                        <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Mola di Bari (BA), Italy</span></li>
-                                        <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>High School Diploma in IT</span></li>
-                                        <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>vannimart74@gmail.com</span></li>
-                                    </ul>
+                    
+                    <div class="about-content">
+                        <div class="about-header">
+                            <div class="profile-image">
+                                <img src="/public/assets/img/profile.jpg" alt="Profile picture" class="profile-icon">
+                            </div>
+                            <div class="header-text">
+                                <h3 class="role-title">IT Specialist & Web Developer</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="about-grid">
+                            <div class="personal-info">
+                                <div class="info-item">
+                                    <i class="fas fa-birthday-cake info-icon" aria-hidden="true"></i>
+                                    <div class="info-content">
+                                        <span class="info-label">Birthday:</span>
+                                        <span class="info-value">29 October 2004</span>
+                                    </div>
                                 </div>
-                                <div class="col-lg-6 text-center">
-                                    <h5 class="mt-3">Something about me...</h5>
-                                    <p> 
-                                        Hi everyone, let me introduce myself, my name is Giovanni Pio but everyone calls me Vanni.
-                                        I am a student of computer science and automation engineering at the Polytechnic of Bari. I finished high school in 2023, graduating with honors, where I had the opportunity to delve into different sides of computer science, telecommunications and networks. Among the various fields I prefer web programming (server-side applications, PHP & MySQL) but i have also studied algorithms and data structures with Java, 
-                                        I dealt with using C up to higher level languages such as JavaScript (and its frameworks) and Python.
-                                    </p>
+                                
+                                <div class="info-item">
+                                    <i class="fas fa-globe info-icon" aria-hidden="true"></i>
+                                    <div class="info-content">
+                                        <span class="info-label">Website:</span>
+                                        <a href="https://centaurinet.it/" target="_blank" style="color: #000"><span class="info-value">centaurinet.it</span></a>
+                                    </div>
+                                </div>
+                                
+                                <div class="info-item">
+                                    <i class="fas fa-phone info-icon" aria-hidden="true"></i>
+                                    <div class="info-content">
+                                        <span class="info-label">Phone:</span>
+                                        <span class="info-value">+39 377 549 2347</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt info-icon" aria-hidden="true"></i>
+                                    <div class="info-content">
+                                        <span class="info-label">City:</span>
+                                        <span class="info-value">Mola di Bari (BA), Italy</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="info-item">
+                                    <i class="fas fa-graduation-cap info-icon" aria-hidden="true"></i>
+                                    <div class="info-content">
+                                        <span class="info-label">Degree:</span>
+                                        <span class="info-value">High School Diploma in IT</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="info-item">
+                                    <i class="fas fa-envelope info-icon" aria-hidden="true"></i>
+                                    <div class="info-content">
+                                        <span class="info-label">Email:</span>
+                                        <span class="info-value">gpmartello04@gmail.com</span>
+                                    </div>
                                 </div>
                             </div>
                             
+                            <div class="bio-section">
+                                <h4 class="bio-title">Something about me...</h4>
+                                <div class="bio-text">
+                                    <p>Hi everyone, my name is Giovanni Pio, but everyone calls me Vanni. I'm currently studying Computer Science and Automation Engineering at the Polytechnic of Bari. I graduated from high school in 2023 with honors, where I had the chance to explore computer science, telecommunications, and networking in depth.</p>
+                                    
+                                    <p>Over time, I've built a strong foundation in programming and software development. I really enjoy web programming — especially working on server-side applications with PHP and MySQL. Besides creating websites, I've developed a real-time chat application in PHP and a Telegram bot in JavaScript that uses weather APIs.</p>
+                                    
+                                    <p>I also have experience with Java for algorithms and data structures, C for systems programming, and higher-level languages like JavaScript frameworks and Python. I'm passionate about emerging technologies such as artificial intelligence, quantum computing, and space systems.</p>
+                                    
+                                    <p>I'm always curious to learn more, take on new challenges, and turn my ideas into real projects. My goal is to grow as an engineer and contribute to innovative technologies that can truly make a difference.</p>
+                                </div>
+                            </div>
                         </div>
+                    
                     </div>
 
                 </div>
             </section><!-- End About Section -->
-
-            <!-- ======= Facts Section ======= 
-            <section id="facts" class="facts">
-                <div class="container" data-aos="fade-up">
-
-                    <div class="section-title">
-                        <h2>Facts</h2>
-                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                            sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                            ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col-lg-3 col-md-6">
-                            <div class="count-box">
-                                <i class="bi bi-emoji-smile"></i>
-                                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
-                                    class="purecounter"></span>
-                                <p>Happy Clients</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-                            <div class="count-box">
-                                <i class="bi bi-journal-richtext"></i>
-                                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
-                                    class="purecounter"></span>
-                                <p>Projects</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-                            <div class="count-box">
-                                <i class="bi bi-headset"></i>
-                                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
-                                    class="purecounter"></span>
-                                <p>Hours Of Support</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-                            <div class="count-box">
-                                <i class="bi bi-award"></i>
-                                <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1"
-                                    class="purecounter"></span>
-                                <p>Awards</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </section> End Facts Section -->
 
             <!-- ======= Skills Section ======= -->
             <section id="skills" class="skills section-bg">
@@ -175,77 +169,57 @@
 
                     <div class="section-title">
                         <h2>Skills</h2>
-                        <p>Skills acquired during my life.</p>
                     </div>
 
-                    <div class="row skills-content">
+                    <div class="skills-grid">
 
-                        <div class="col-lg-6">
-
-                            <div class="progress">
-                                <span class="skill">HTML & CSS<i class="val">90%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-
-                            <div class="progress">
-                                <span class="skill">JS & Node.js <i class="val">65%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-
-                            <div class="progress">
-                                <span class="skill">PHP & MySQL <i class="val">85%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-
-                            <div class="progress">
-                                <span class="skill">Py & Flask<i class="val">40%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-
+                        <div class="skill-item">
+                            <i class="fa-brands fa-html5 skill-icon html-color" aria-hidden="true"></i>
+                            <h3 class="skill-name">HTML</h3>
                         </div>
-
-                        <div class="col-lg-6">
-
-                            <div class="progress">
-                                <span class="skill">C <i class="val">75%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-
-                            <div class="progress">
-                                <span class="skill">Java <i class="val">80%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-
-                            <div class="progress">
-                                <span class="skill">Sony Vegas <i class="val">75%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-
-                            <div class="progress">
-                                <span class="skill">Photoshop <i class="val">60%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-
+                        
+                        <div class="skill-item">
+                            <i class="fa-brands fa-css3-alt skill-icon css-color" aria-hidden="true"></i>
+                            <h3 class="skill-name">CSS</h3>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <i class="fa-brands fa-js skill-icon js-color" aria-hidden="true"></i>
+                            <h3 class="skill-name">JavaScript</h3>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <i class="fa-brands fa-node-js skill-icon nodejs-color" aria-hidden="true"></i>
+                            <h3 class="skill-name">Node.js</h3>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <i class="fa-brands fa-php skill-icon php-color" aria-hidden="true"></i>
+                            <h3 class="skill-name">PHP</h3>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <i class="fa-solid fa-database skill-icon mysql-color" aria-hidden="true"></i>
+                            <h3 class="skill-name">MySQL</h3>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <i class="fa-brands fa-python skill-icon python-color" aria-hidden="true"></i>
+                            <h3 class="skill-name">Python</h3>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <i class="fa-solid fa-code skill-icon c-color" aria-hidden="true"></i>
+                            <h3 class="skill-name">C</h3>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <i class="fa-brands fa-java skill-icon java-color" aria-hidden="true"></i>
+                            <h3 class="skill-name">Java</h3>
                         </div>
 
                     </div>
-
+                    
                 </div>
             </section><!-- End Skills Section -->
 
@@ -255,248 +229,159 @@
 
                     <div class="section-title">
                         <h2>Resume</h2>
-                        <p>
-                            Here you can find more information about me.
-                        </p>
+                    </div>
+                
+                    <div class="timeline-container">
+
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Bachelor's Degree in Computer Science and Automation Engineering</h3>
+                                <p class="timeline-subtitle">2023 - now</p>
+                                <p class="timeline-subtitle">Polytechnic of Bari, Bari (BA), Italy</p>
+                                <p class="timeline-description">Field of study: Automation</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Qiskit Global Summer School 2025</h3>
+                                <p class="timeline-subtitle">2025</p>
+                                <p class="timeline-subtitle">IBM</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Introduction to Generative AI Learning Path</h3>
+                                <p class="timeline-subtitle">2023</p>
+                                <p class="timeline-subtitle">Google</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">ICDL: IT Security</h3>
+                                <p class="timeline-subtitle">2023</p>
+                                <p class="timeline-subtitle">AICA</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">High School Diploma</h3>
+                                <p class="timeline-subtitle">2018 - 2023</p>
+                                <p class="timeline-subtitle">IISS Luigi dell'Erba, Castellana Grotte (BA), Italy</p>
+                                <p class="timeline-description">Field of study: Computer Science and Telecommunications</p>
+                                <p class="timeline-description"><strong>Final Grade: 100/100 with honors</strong></p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">B2 First (FCE)</h3>
+                                <p class="timeline-subtitle">2023</p>
+                                <p class="timeline-subtitle">Cambridge English</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">NSE 1 & 2</h3>
+                                <p class="timeline-subtitle">2022</p>
+                                <p class="timeline-subtitle">Fortinet Training Institute</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Internship</h3>
+                                <p class="timeline-subtitle">2022</p>
+                                <p class="timeline-subtitle">Eulogic SRL, Bari (BA)</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">CyberChallenge</h3>
+                                <p class="timeline-subtitle">2022</p>
+                                <p class="timeline-subtitle">Cybersecurity National Laboratory</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">IoT Fundamentals</h3>
+                                <p class="timeline-subtitle">2022</p>
+                                <p class="timeline-subtitle">Cisco Networking Academy</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Cisco CyberSecurity Scholarship</h3>
+                                <p class="timeline-subtitle">2021</p>
+                                <p class="timeline-subtitle">Cisco Networking Academy</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Introduction to CyberSecurity</h3>
+                                <p class="timeline-subtitle">2020</p>
+                                <p class="timeline-subtitle">Cisco Networking Academy</p>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="row">
+                    <div class="resume-download">
+                        <p>You can find the entire resume <a href="/public/assets/GiovanniPioMartello_CV.pdf" target="_blank" class="resume-link">here</a></p>
+                    </div>
 
-                        <div class="col-lg-6">
-                            <h3 class="resume-title">Sumary</h3>
-                            <div class="resume-item pb-0">
-                                <h4>Giovanni Pio Martello</h4>
-                                <p><em>IT Specialist & Web Developer</em></p>
-                                <ul>
-                                    <li>Mola di Bari (BA), Italy</li>
-                                    <li>+39 377 549 2347</li>
-                                    <li>vannimart74@gmail.com</li>
-                                </ul>
+                    <div class="badges-section">
+                        <h3 class="badges-title">Certifications & Achievements</h3>
+                        <div class="badges-grid">
+
+                            <div class="badge-item">
+                                <img src="/public/assets/img/badge/qiskit-badge.png" alt="Qiskit" class="badge-image">
+                                <a href="https://www.credly.com/badges/8d28b7f1-c980-4ebf-becf-d8ad3a5012ce/public_url" class="badge-link" target="_blank">IBM</a>
                             </div>
-                            <h3 class="resume-title">Education</h3>
-                            <div class="resume-item">
-                                <h4>High School Diploma</h4>
-                                <h5>2018 - 2023</h5>
-                                <p><em>IISS Luigi dell'Erba, Castellana Grotte (BA), Italy</em></p>
-                                <p>
-                                    Field of study: Computer Science and Telecommunications
-                                </p>
-                                <p>
-                                    Final Grade: 100 with honors
-                                </p>
+                            
+                            <div class="badge-item">
+                                <img src="/public/assets/img/badge/automatica.png" alt="Automatica" class="badge-image">
+                                <a href="/public/assets/automatica-polimi.pdf" class="badge-link" target="_blank">Politecnico di Milano</a>
                             </div>
-                            <div class="resume-item">
-                                <h4>Bachelor's Degree in Computer Science and Automation engineering</h4>
-                                <h5>2023 - now</h5>
-                                <p><em>Polytechnic of Bari, Bari (BA), Italy</em></p>
-                                <p>
-                                    Field of study: Automation
-                                </p>
+                            
+                            <div class="badge-item">
+                                <img src="/public/assets/img/badge/olicyber.png" alt="Olicyber" class="badge-image">
+                                <a href="https://bestr.it/award/show/ORSV8dJbQouqtvkk7ic_Dw" class="badge-link" target="_blank">Cybersecurity National Laboratory - CINI</a>
                             </div>
-                            <h3 class="resume-title">Language Skills</h3>
-                            <!--<ul>
-                                <li>Native Language: Italian</li>
-                                <li>Other: French</li>
-                            </ul>-->
-                            <div class="resume-item">
-                                <h4>B2 First (FCE)</h4>
-                                <h5>2023</h5>
-                                <p><em>Cambridge English</em></p>
+
+                            <div class="badge-item">
+                                <img src="/public/assets/img/badge/ICDL-IT-Security.png" alt="ICDL" class="badge-image">
+                                <a href="/public/assets/ICDL.pdf" class="badge-link" target="_blank">AICA</a>
                             </div>
+
+                            <div class="badge-item">
+                                <img src="/public/assets/img/badge/intro-to-gen-ai.png" alt="Introduction to Generative AI" class="badge-image">
+                                <a href="https://www.cloudskillsboost.google/public_profiles/e64dbe5f-418c-4ad0-a4a0-5c0390cb2d3e/badges/4872543" class="badge-link" target="_blank">Google</a>
+                            </div>
+
+                            <div class="badge-item">
+                                <img src="/public/assets/img/badge/into-to-iot.png" alt="Introduction to IoT" class="badge-image">
+                                <a href="https://www.credly.com/badges/fe6294e6-b0c5-4c20-8510-ee5cbf2c97a0/public_url" class="badge-link" target="_blank">Cisco Networking Academy</a>
+                            </div>
+                            
+                            <div class="badge-item">
+                                <img src="/public/assets/img/badge/intro-to-cyber.png" alt="Introduction to Cybersecurity" class="badge-image">
+                                <a href="https://www.credly.com/badges/240a8f23-5b7f-47d0-af49-7b06e68d93a9/public_url" class="badge-link" target="_blank">Cisco Networking Academy</a>
+                            </div>
+
                         </div>
-
-                        <div class="col-lg-6">
-                            <h3 class="resume-title">Certifications and Experiences</h3>
-                            <div class="resume-item">
-                                <h4>"Introduction to CyberSecurity"</h4>
-                                <h5>2020</h5>
-                                <p><em>Cisco Networking Academy</em></p>
-                            </div>
-                            <div class="resume-item">
-                                <h4>"Cisco CyberSecurity Scholarship"</h4>
-                                <h5>2021</h5>
-                                <p><em>Cisco Networking Academy</em></p>
-                            </div>
-                            <div class="resume-item">
-                                <h4>"IoT Fundamentals"</h4>
-                                <h5>2022</h5>
-                                <p><em>Cisco Networking Academy</em></p>
-                            </div>
-                            <div class="resume-item">
-                                <h4>"CyberChallenge"</h4>
-                                <h5>2022</h5>
-                                <p><em>Cybersecurity National Laboratory</em></p>
-                            </div>
-                            <div class="resume-item">
-                                <h4>Internship</h4>
-                                <h5>2022</h5>
-                                <p><em>Eulogic SRL, Bari (BA)</em></p>
-                            </div>
-                            <div class="resume-item">
-                                <h4>"NSE 1 & 2"</h4>
-                                <h5>2022</h5>
-                                <p><em>Fortinet Training Institute</em></p>
-                            </div>
-                            <div class="resume-item">
-                                <h4>"ICDL: IT Security"</h4>
-                                <h5>2023</h5>
-                                <p><em>AICA</em></p>
-                            </div>
-                            <div class="resume-item">
-                                <h4>"Introduction to Generative AI Learning Path"</h4>
-                                <h5>now</h5>
-                                <p><em>Google</em></p>
-                            </div>
-                        </div>
-
-                        <h4 class="mt-4">You can find the entire resume by following this <a href="assets/GiovanniPioMartello_CV.pdf" target="_blank">link</a></h4>
-
-                        <!--<div class="col-lg-6">
-                            <h3 class="resume-title">Professional Experience</h3>
-                            <div class="resume-item">
-                                <h4>Senior graphic design specialist</h4>
-                                <h5>2019 - Present</h5>
-                                <p><em>Experion, New York, NY </em></p>
-                                <ul>
-                                    <li>Lead in the design, development, and implementation of the graphic, layout, and
-                                        production communication materials</li>
-                                    <li>Delegate tasks to the 7 members of the design team and provide counsel on all
-                                        aspects of the project. </li>
-                                    <li>Supervise the assessment of all graphic materials in order to ensure quality and
-                                        accuracy of the design</li>
-                                    <li>Oversee the efficient use of production project budgets ranging from $2,000 -
-                                        $25,000</li>
-                                </ul>
-                            </div>
-                            <div class="resume-item">
-                                <h4>Graphic design specialist</h4>
-                                <h5>2017 - 2018</h5>
-                                <p><em>Stepping Stone Advertising, New York, NY</em></p>
-                                <ul>
-                                    <li>Developed numerous marketing programs (logos, brochures,infographics, presentations,
-                                        and advertisements).</li>
-                                    <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                                    <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                                    <li>Created 4+ design presentations and proposals a month for clients and account
-                                        managers</li>
-                                </ul>
-                            </div>
-                        </div>-->
                     </div>
 
                 </div>
             </section><!-- End Resume Section -->
-
-            <!-- ======= Portfolio Section ======= -->
-            <section id="portfolio" class="portfolio section-bg">
-                <div class="container" data-aos="fade-up">
-
-                    <div class="section-title">
-                        <h2>Portfolio</h2>
-                        <p>
-                            These are some of the projects I have developed.
-                            <br>
-                            (They are not optimized for mobile devices)
-                        </p>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                            <ul id="portfolio-flters">
-                                <li data-filter="*" class="filter-active">All</li>
-                                <!--<li data-filter=".filter-app">App</li>
-                                <li data-filter=".filter-card">Card</li>-->
-                                <li data-filter=".filter-web">Web</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/astrophone.jpg" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>AstroPhone</h4>
-                                    <p>E-Commerce</p>
-                                    <div class="portfolio-links">
-                                        <a href="assets/img/portfolio/astrophone.jpg" data-gallery="portfolioGallery"
-                                            class="portfolio-lightbox" title="Example of a website for an e-commerce"><i class="bx bx-plus"></i></a>
-                                        <a href="https://www.martellogiovannipio.altervista.org/astrophone"
-                                            target="_blank" title="Portfolio Details"><i class="bx bx-link"></i></a> <!--class="portfolio-details-lightbox", data-glightbox="type: external"-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/quiz.jpg" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Silly Love Quiz</h4>
-                                    <p>Quiz Game</p>
-                                    <div class="portfolio-links">
-                                        <a href="assets/img/portfolio/quiz.jpg" data-gallery="portfolioGallery"
-                                            class="portfolio-lightbox" title="Example of a quiz game"><i class="bx bx-plus"></i></a>
-                                        <a href="https://www.martellogiovannipio.altervista.org/quiz"
-                                            target="_blank" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/greenco.jpg" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>GreenCo</h4>
-                                    <p>Ecological Company</p>
-                                    <div class="portfolio-links">
-                                        <a href="assets/img/portfolio/greenco.jpg" data-gallery="portfolioGallery"
-                                            class="portfolio-lightbox" title="Example of a website for an ecological company"><i class="bx bx-plus"></i></a>
-                                        <a href="https://www.martellogiovannipio.altervista.org/greenco"
-                                            target="_blank" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/universal.jpg" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>Autoservizi Universal</h4>
-                                    <p>Public Transport</p>
-                                    <div class="portfolio-links">
-                                        <a href="assets/img/portfolio/universal.jpg" data-gallery="portfolioGallery"
-                                            class="portfolio-lightbox" title="Example of a website for public transport"><i class="bx bx-plus"></i></a>
-                                        <a href="https://www.martellogiovannipio.altervista.org/universal"
-                                            target="_blank" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                            <div class="portfolio-wrap">
-                                <img src="assets/img/portfolio/xnews.jpg" class="img-fluid" alt="">
-                                <div class="portfolio-info">
-                                    <h4>xNews</h4>
-                                    <p>Online Forum</p>
-                                    <div class="portfolio-links">
-                                        <a href="assets/img/portfolio/xnews.jpg" data-gallery="portfolioGallery"
-                                            class="portfolio-lightbox" title="Example of an online forum"><i class="bx bx-plus"></i></a>
-                                        <a href="https://www.martellogiovannipio.altervista.org/xnews"
-                                            target="_blank" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </section><!-- End Portfolio Section -->
 
             <!-- ======= Services Section ======= -->
             <section id="services" class="services">
@@ -504,224 +389,46 @@
 
                     <div class="section-title">
                         <h2>Services</h2>
-                        <p>
-                            These are the services I offer.
-                        </p>
                     </div>
 
-                    <div class="row">
-
-                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                            <div class="icon-box iconbox-blue">
-                                <div class="icon">
-                                    <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                                            d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
-                                        </path>
-                                    </svg>
-                                    <i class="bi bi-database"></i>
-                                </div>
-                                <h4><a href="">Database</a></h4>
-                                <p>Design and development of customized relational databases (MySQL)</p>
+                     <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon website-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8L14 2Z" fill="currentColor"/>
+                                    <path d="M14 2V8H20" fill="none" stroke="white" stroke-width="2"/>
+                                </svg>
                             </div>
+                            <h3 class="service-title">Website</h3>
+                            <p class="service-description">Design and development of modern, responsive, and high-performance websites tailored to your needs.</p>
                         </div>
-
-                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
-                            data-aos-delay="200">
-                            <div class="icon-box iconbox-orange ">
-                                <div class="icon">
-                                    <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                                            d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
-                                        </path>
-                                    </svg>
-                                    <i class="bx bx-file"></i>
-                                </div>
-                                <h4><a href="">Website</a></h4>
-                                <p>Creation of unique and functional websites for personal or commercial purposes</p>
+                        
+                        <div class="service-card">
+                            <div class="service-icon database-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M21 12C21 13.66 16.97 15 12 15S3 13.66 3 12" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M3 5V19C3 20.66 7.03 22 12 22S21 20.66 21 19V5" fill="none" stroke="currentColor" stroke-width="2"/>
+                                </svg>
                             </div>
+                            <h3 class="service-title">Database</h3>
+                            <p class="service-description">Custom relational database solutions (MySQL) designed for scalability, security, and efficiency.</p>
                         </div>
-
-                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
-                            data-aos-delay="300">
-                            <div class="icon-box iconbox-pink">
-                                <div class="icon">
-                                    <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                                            d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781">
-                                        </path>
-                                    </svg>
-                                    <i class="bi bi-tools"></i>
-                                </div>
-                                <h4><a href="">Support</a></h4>
-                                <p>Reliable technical support to keep your website always performing</p>
+                        
+                        <div class="service-card">
+                            <div class="service-icon support-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.7 6.3C16.2 7.8 16.2 10.2 14.7 11.7L11.7 14.7C10.2 16.2 7.8 16.2 6.3 14.7C4.8 13.2 4.8 10.8 6.3 9.3L9.3 6.3" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M9.3 17.7C7.8 16.2 7.8 13.8 9.3 12.3L12.3 9.3C13.8 7.8 16.2 7.8 17.7 9.3C19.2 10.8 19.2 13.2 17.7 14.7L14.7 17.7" fill="none" stroke="currentColor" stroke-width="2"/>
+                                </svg>
                             </div>
+                            <h3 class="service-title">Support</h3>
+                            <p class="service-description">Continuous technical support to ensure your website stays fast, secure, and always online.</p>
                         </div>
-
                     </div>
 
                 </div>
             </section><!-- End Services Section -->
-
-            <!-- ======= Testimonials Section =======
-            <section id="testimonials" class="testimonials section-bg">
-                <div class="container" data-aos="fade-up">
-
-                    <div class="section-title">
-                        <h2>Testimonials</h2>
-                    </div>
-
-                    <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-                        <div class="swiper-wrapper">
-
-                            <div class="swiper-slide">
-                                <div class="testimonial-item">
-                                    <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                                    <h3>Saul Goodman</h3>
-                                    <h4>Ceo &amp; Founder</h4>
-                                    <p>
-                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
-                                        rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                                        risus at semper.
-                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                    </p>
-                                </div>
-                            </div> End testimonial item
-
-                            <div class="swiper-slide">
-                                <div class="testimonial-item">
-                                    <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                                    <h3>Sara Wilsson</h3>
-                                    <h4>Designer</h4>
-                                    <p>
-                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
-                                        cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet
-                                        legam anim culpa.
-                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                    </p>
-                                </div>
-                            </div> End testimonial item
-
-                            <div class="swiper-slide">
-                                <div class="testimonial-item">
-                                    <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                                    <h3>Jena Karlis</h3>
-                                    <h4>Store Owner</h4>
-                                    <p>
-                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                        Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem
-                                        veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint
-                                        minim.
-                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                    </p>
-                                </div>
-                            </div> End testimonial item
-
-                            <div class="swiper-slide">
-                                <div class="testimonial-item">
-                                    <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                                    <h3>Matt Brandon</h3>
-                                    <h4>Freelancer</h4>
-                                    <p>
-                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                        Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
-                                        fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem
-                                        dolore labore illum veniam.
-                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                    </p>
-                                </div>
-                            </div> End testimonial item
-
-                            <div class="swiper-slide">
-                                <div class="testimonial-item">
-                                    <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                                    <h3>John Larson</h3>
-                                    <h4>Entrepreneur</h4>
-                                    <p>
-                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                        Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
-                                        veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
-                                        culpa fore nisi cillum quid.
-                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                    </p>
-                                </div>
-                            </div> End testimonial item
-
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-
-                </div>
-            </section> End Testimonials Section -->
-
-            <!-- ======= Contact Section ======= -->
-            <section id="contact" class="contact">
-                <div class="container" data-aos="fade-up">
-
-                    <div class="section-title">
-                        <h2>Contact</h2>
-                    </div>
-
-                    <div class="row mt-1">
-
-                        <div class="col-lg-4">
-                            <div class="info">
-                                <div class="address">
-                                    <i class="bi bi-geo-alt"></i>
-                                    <h4>Location:</h4>
-                                    <p>Mola di Bari (BA), Bari, Italy</p>
-                                </div>
-
-                                <div class="email">
-                                    <i class="bi bi-envelope"></i>
-                                    <h4>Email:</h4>
-                                    <p>vannimart74@gmail.com</p>
-                                </div>
-
-                                <div class="phone">
-                                    <i class="bi bi-phone"></i>
-                                    <h4>Call:</h4>
-                                    <p>+39 377 549 2347</p>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="col-lg-8 mt-5 mt-lg-0">
-
-                            <form action="forms/contact.html" method="post" role="form" class="email-form">
-                                <div class="row">
-                                    <div class="col-md-6 form-group">
-                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                                    </div>
-                                    <div class="col-md-6 form-group mt-3 mt-md-0">
-                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                                    </div>
-                                </div>
-                                <div class="form-group mt-3">
-                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                                </div>
-                                <div class="form-group mt-3">
-                                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                                </div>
-                                <div class="my-3">
-                                    <div class="loading">Loading</div>
-                                    <div class="error-message"></div>
-                                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                                </div>
-                                <div class="text-center"><button type="submit" disabled>Send Message</button></div>
-                                <div class="text-center mt-2"><p>Work in progress!</p></div>
-                            </form>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </section><!-- End Contact Section -->
 
         </main><!-- End #main -->
 
@@ -729,7 +436,7 @@
         <footer id="footer">
             <div class="container">
                 <h3>Giovanni Pio Martello</h3>
-                <p>IT Specialist &amp; Web Developer.</p>
+                <p>IT Specialist &amp; Web Developer</p>
                 <div class="social-links">
                     <a href="https://www.instagram.com/gpmartello/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/giovanni-pio-martello/" target="_blank" class="linkedin"><i class="bx bxl-linkedin-square"></i></a>
