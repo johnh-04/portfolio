@@ -9,20 +9,12 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: 'Giovanni Pio Martello | Web Developer & Engineering Student',
   description: 'Computer Science & Automation Engineering student and freelance web developer focused on AI, space technologies, and full-stack development.',
-  generator: 'v0.app',
+  generator: 'GPM',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/icon-32x32.png',
         media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
       },
     ],
     apple: '/apple-icon.png',
