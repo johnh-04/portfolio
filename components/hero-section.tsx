@@ -9,7 +9,7 @@ export function HeroSection() {
         <div className="mb-6 flex justify-center">
           <div className="relative h-32 w-32 overflow-hidden rounded-full border-4 border-primary/20 shadow-lg shadow-primary/10 md:h-40 md:w-40">
             <Image
-              src="../public/profile.jpg"
+              src="../public/profile.jpeg"
               alt="Giovanni Pio Martello"
               fill
               className="object-cover"
