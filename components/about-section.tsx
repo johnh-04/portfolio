@@ -15,7 +15,7 @@ export function AboutSection() {
           </div>
           <div className="space-y-3">
             <InfoItem icon={Mail} label="Email" value="vannimart74@gmail.com" />
-            <InfoItem icon={GraduationCap} label="Education" value="BSc Computer Science & Automation" />
+            <InfoItem icon={GraduationCap} label="Education" value="BSc Computer Science & Automation Engineering (in progress)" />
             <InfoItem icon={Globe} label="Languages" value="Italian (Native), English (B2), French (Basic)" />
           </div>
         </div>
@@ -29,16 +29,15 @@ export function AboutSection() {
           </p>
 
           <p className="leading-relaxed">
-            Over time, I&apos;ve built a strong foundation in programming and software development. I
-            really enjoy web programming — especially working on server-side applications. 
-            I&apos;ve developed real-time chat applications, Telegram bots, and various full-stack web projects.
+            My technical foundation spans <span className="text-foreground font-medium">algorithms & data structures, object-oriented programming, distributed systems & concurrent computing, machine learning fundamentals, computer networks & cybersecurity, signal processing, and control systems & automation</span>. I&apos;ve applied these skills through projects including a Telegram bot, Arduino embedded systems, real-time PHP chat applications, and full-stack web solutions for private clients.
           </p>
 
           <p className="leading-relaxed">
-            I&apos;m passionate about emerging technologies such as <span className="text-foreground font-medium">artificial intelligence</span>, 
-            <span className="text-foreground font-medium"> quantum computing</span>, and 
-            <span className="text-foreground font-medium"> space systems</span>. My goal is to grow as an engineer 
-            and contribute to innovative technologies that can truly make a difference.
+            I&apos;m deeply passionate about <span className="text-foreground font-medium">AI-powered systems, space technologies & satellite systems, IoT & distributed intelligence, automation & intelligent control, and quantum computing</span>. Currently, I&apos;m focusing on <span className="text-foreground font-medium">bare metal programming for embedded systems and space data science</span> — particularly the data processing pipelines and on-edge signal processing involved in satellite applications.
+          </p>
+
+          <p className="leading-relaxed">
+            Beyond development, I mentor high school and university students in STEM and English, helping them build strong technical foundations. My goal is to become a <span className="text-foreground font-medium">Satellite Communications (SatCom) Engineer</span>, contributing to next-generation space infrastructure and distributed intelligence systems.
           </p>
 
           <blockquote className="border-l-4 border-primary bg-primary/5 pl-4 py-3 italic text-foreground">

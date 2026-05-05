@@ -11,12 +11,7 @@ export const metadata: Metadata = {
   description: 'Computer Science & Automation Engineering student and freelance web developer focused on AI, space technologies, and full-stack development.',
   generator: 'GPM',
   icons: {
-    icon: [
-      {
-        url: '/icon-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-    ],
+    icon: '/icon-32x32.png',
     apple: '/apple-icon.png',
   },
 }

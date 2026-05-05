@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 import { Github, Linkedin, Instagram, ArrowUpRight } from "lucide-react"
 import { Typewriter } from "./typewriter"
@@ -8,8 +9,7 @@ export function HeroSection() {
       <div className="mx-auto max-w-3xl">
         <div className="mb-6 flex justify-center">
           <div className="relative h-32 w-32 overflow-hidden rounded-full border-4 border-primary/20 shadow-lg shadow-primary/10 md:h-40 md:w-40">
-            <Image
-              src="../public/profile.jpeg"
+            <Image src="/profile.jpeg"
               alt="Giovanni Pio Martello"
               fill
               className="object-cover"
@@ -23,13 +23,13 @@ export function HeroSection() {
         </h1>
         
         <p className="mb-6 text-lg text-primary font-medium md:text-xl">
-          Computer Science & Automation Engineering Student
+          Computer Science & Automation Engineering student
         </p>
         
         <p className="mb-6 text-lg text-muted-foreground md:text-xl">
           I&apos;m a{" "}
           <Typewriter 
-            words={["Web Developer", "Freelancer", "AI Enthusiast", "Space Tech Explorer"]} 
+            words={["Freelance Web Developer", "AI & Space Tech Enthusiast"]} 
           />
         </p>
         

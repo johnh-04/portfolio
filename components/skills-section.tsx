@@ -7,7 +7,8 @@ import {
   Cpu,
   Cog,
   Brain,
-  Layers
+  Layers,
+  Zap
 } from "lucide-react"
 
 const skillCategories = [
@@ -19,7 +20,7 @@ const skillCategories = [
   {
     title: "Web Development",
     icon: Globe,
-    skills: ["HTML", "CSS", "React", "Node.js", "Express", "Flask", "REST APIs", "WebSockets"]
+    skills: ["HTML", "CSS", "Node.js", "Express", "REST APIs", "WebSockets", "CRUD", "Client-Server Architecture"]
   },
   {
     title: "Databases",
@@ -46,7 +47,7 @@ const skillCategories = [
 const interests = [
   { icon: Brain, label: "Artificial Intelligence" },
   { icon: Layers, label: "Space Technologies" },
-  { icon: Server, label: "Distributed Systems" },
+  { icon: Zap, label: "Embedded Systems" },
   { icon: Cpu, label: "Quantum Computing" },
 ]
 

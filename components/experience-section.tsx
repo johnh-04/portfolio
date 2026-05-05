@@ -1,25 +1,12 @@
 import { ExternalLink } from "lucide-react"
 
 const experiences = [
-  {
-    title: "BSc Computer Science & Automation Engineering",
-    organization: "Polytechnic of Bari",
-    period: "2023 — Present",
-    description: "Pursuing a Bachelor's degree with focus on Automation, studying control systems, signal processing, and software engineering.",
-    type: "education"
-  },
+
   {
     title: "Freelance Web Developer",
     organization: "Self-employed",
     period: "2025 — Present",
     description: "Building custom websites and web applications tailored to client needs. Focus on performance, usability, and clean implementation.",
-    type: "work"
-  },
-  {
-    title: "Private Tutor (STEM & English)",
-    organization: "Self-employed",
-    period: "2024 — Present",
-    description: "Providing private tutoring in mathematics, physics, computer science, and English language to high school and university students.",
     type: "work"
   },
   {
@@ -31,18 +18,81 @@ const experiences = [
     type: "certification"
   },
   {
+    title: "Private Tutor (STEM & English)",
+    organization: "Self-employed",
+    period: "2024 — Present",
+    description: "Providing private tutoring in mathematics, physics, computer science, and English language to high school and university students.",
+    type: "work"
+  },
+  {
+    title: "Generative AI",
+    organization: "Google",
+    period: "2023",
+    description: "Completed Google Cloud's online course on generative AI, earning a verified digital badge.",
+    link: "https://www.skills.google/public_profiles/e64dbe5f-418c-4ad0-a4a0-5c0390cb2d3e/badges/4872543",
+    type: "certification"
+  },
+  {
+    title: "BSc Computer Science & Automation Engineering",
+    organization: "Polytechnic of Bari",
+    period: "2023 — Present",
+    description: "Pursuing a Bachelor's degree with focus on Automation, studying control systems, signal processing, and software engineering.",
+    type: "education"
+  },
+  {
+    title: "ICDL - IT Security",
+    organization: "AICA",
+    period: "2023",
+    description: "Earned the ICDL IT Security certification, demonstrating knowledge of cybersecurity principles and best practices.",
+    link: "/ICDL_Certificato-IT-Security_CC.pdf",
+    type: "certification"
+  },
+  {
+    title: "Introduction to IoT",
+    organization: "Cisco Networking Academy",
+    period: "2020",
+    description: "Completed Cisco's online course covering IoT fundamentals, earning a verified digital badge.",
+    link: "https://www.credly.com/badges/fe6294e6-b0c5-4c20-8510-ee5cbf2c97a0/public_url",
+    type: "certification"
+  },
+  {
+    title: "NSE 1 & 2",
+    organization: "Fortinet Training Institute",
+    period: "2022",
+    description: "Completed Fortinet's NSE 1 & 2 certifications.",
+    link: "/NSE_1&2.pdf",
+    type: "certification"
+  },
+  {
+    title: "CyberChallenge participation",
+    organization: "Cybersecurity National Laboratory",
+    period: "2022",
+    description: "Selected to participate in the national cybersecurity training program.",
+    link: "/Attestato_partecipazione_CC.IT.pdf",
+    type: "certification"
+  },
+  {
+    title: "Cisco Cybersecurity Scholarship",
+    organization: "Cisco Networking Academy",
+    period: "2021",
+    description: "Awarded a scholarship to complete Cisco's online cybersecurity course, covering fundamentals of network security and cyber threats.",
+    link: "/Cisco_Cybersecurity_Scholarship.pdf",
+    type: "certification"
+  },
+  {
+    title: "Introduction to Cybersecurity",
+    organization: "Cisco Networking Academy",
+    period: "2020",
+    description: "Completed Cisco's online course covering cybersecurity fundamentals, earning a verified digital badge.",
+    link: "https://www.credly.com/badges/240a8f23-5b7f-47d0-af49-7b06e68d93a9/public_url",
+    type: "certification"
+  },
+  {
     title: "High School Diploma",
     organization: "IISS Luigi dell'Erba",
     period: "2018 — 2023",
     description: "Computer Science & Telecommunications. Final grade: 100/100 with honors. Registered in National Register of Excellence — INDIRE.",
     type: "education"
-  },
-  {
-    title: "CyberChallenge Participant",
-    organization: "Cybersecurity National Laboratory",
-    period: "2022",
-    description: "Selected to participate in the national cybersecurity training program.",
-    type: "certification"
   },
 ]
 
@@ -59,7 +109,7 @@ export function ExperienceSection() {
 
           <div className="space-y-6">
             {experiences.map((exp, index) => (
-              <div 
+              <div
                 key={exp.title}
                 className={`relative flex gap-8 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}
               >
@@ -76,7 +126,7 @@ export function ExperienceSection() {
                     <p className="mb-3 text-sm font-medium text-primary">{exp.organization}</p>
                     <p className="text-sm leading-relaxed text-muted-foreground">{exp.description}</p>
                     {exp.link && (
-                      <a 
+                      <a
                         href={exp.link}
                         target="_blank"
                         rel="noopener noreferrer"
