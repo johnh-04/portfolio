@@ -30,7 +30,7 @@ const skillCategories = [
   {
     title: "Tools & Platforms",
     icon: Terminal,
-    skills: ["Linux", "Git", "Docker", "Packet Tracer", "Multisim"]
+    skills: ["Linux", "Git", "Docker", "Simulink", "Packet Tracer", "Multisim"]
   },
   {
     title: "Robotics & IoT",
@@ -40,7 +40,7 @@ const skillCategories = [
   {
     title: "Engineering Foundations",
     icon: Cog,
-    skills: ["Control Systems", "Signal Processing", "Automation", "PLC Programming"]
+    skills: ["Control Systems & Automation", "Signal Processing", "LTI systems", "Digital Communication systems"]
   }
 ]
 

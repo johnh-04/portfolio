@@ -1,13 +1,26 @@
 import { ExternalLink } from "lucide-react"
 
 const experiences = [
-
   {
     title: "Freelance Web Developer",
     organization: "Self-employed",
     period: "2025 — Present",
     description: "Building custom websites and web applications tailored to client needs. Focus on performance, usability, and clean implementation.",
     type: "work"
+  },
+  {
+    title: "Private Tutor (STEM & English)",
+    organization: "Self-employed",
+    period: "2024 — Present",
+    description: "Providing private tutoring in mathematics, physics, computer science, and English language to high school and university students.",
+    type: "work"
+  },
+  {
+    title: "BSc Computer Science & Automation Engineering",
+    organization: "Polytechnic of Bari",
+    period: "2023 — Present",
+    description: "Pursuing a Bachelor's degree with focus on Automation, studying control systems, signal processing, and software engineering.",
+    type: "education"
   },
   {
     title: "Qiskit Global Summer School 2025",
@@ -18,13 +31,6 @@ const experiences = [
     type: "certification"
   },
   {
-    title: "Private Tutor (STEM & English)",
-    organization: "Self-employed",
-    period: "2024 — Present",
-    description: "Providing private tutoring in mathematics, physics, computer science, and English language to high school and university students.",
-    type: "work"
-  },
-  {
     title: "Generative AI",
     organization: "Google",
     period: "2023",
@@ -33,10 +39,10 @@ const experiences = [
     type: "certification"
   },
   {
-    title: "BSc Computer Science & Automation Engineering",
-    organization: "Polytechnic of Bari",
-    period: "2023 — Present",
-    description: "Pursuing a Bachelor's degree with focus on Automation, studying control systems, signal processing, and software engineering.",
+    title: "High School Diploma",
+    organization: "IISS Luigi dell'Erba",
+    period: "2018 — 2023",
+    description: "Computer Science & Telecommunications. Final grade: 100/100 with honors. Registered in National Register of Excellence — INDIRE.",
     type: "education"
   },
   {
@@ -50,7 +56,7 @@ const experiences = [
   {
     title: "Introduction to IoT",
     organization: "Cisco Networking Academy",
-    period: "2020",
+    period: "2023",
     description: "Completed Cisco's online course covering IoT fundamentals, earning a verified digital badge.",
     link: "https://www.credly.com/badges/fe6294e6-b0c5-4c20-8510-ee5cbf2c97a0/public_url",
     type: "certification"
@@ -86,13 +92,6 @@ const experiences = [
     description: "Completed Cisco's online course covering cybersecurity fundamentals, earning a verified digital badge.",
     link: "https://www.credly.com/badges/240a8f23-5b7f-47d0-af49-7b06e68d93a9/public_url",
     type: "certification"
-  },
-  {
-    title: "High School Diploma",
-    organization: "IISS Luigi dell'Erba",
-    period: "2018 — 2023",
-    description: "Computer Science & Telecommunications. Final grade: 100/100 with honors. Registered in National Register of Excellence — INDIRE.",
-    type: "education"
   },
 ]
 

@@ -5,7 +5,7 @@ import { Typewriter } from "./typewriter"
 
 export function HeroSection() {
   return (
-    <section className="relative flex h-screen flex-col items-center justify-center bg-gradient-to-br from-primary/5 via-background to-primary/10 px-6 text-center">
+    <section className="relative flex h-screen flex-col items-center justify-center pt-10 bg-gradient-to-br from-primary/5 via-background to-primary/10 px-6 text-center">
       <div className="mx-auto max-w-3xl">
         <div className="mb-6 flex justify-center">
           <div className="relative h-32 w-32 overflow-hidden rounded-full border-4 border-primary/20 shadow-lg shadow-primary/10 md:h-40 md:w-40">
