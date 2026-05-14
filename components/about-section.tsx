@@ -7,17 +7,26 @@ export function AboutSection() {
         <h2 className="mb-2 text-sm font-semibold uppercase tracking-wider text-primary">About</h2>
         <h3 className="mb-8 text-3xl font-bold text-foreground md:text-4xl">Something about me</h3>
 
-        <div className="mb-10 grid gap-6 md:grid-cols-2">
-          <div className="space-y-3">
+        <div className="mb-10 flex flex-col gap-3 md:flex-row md:gap-x-12 md:gap-y-0">
+          
+          {/* COLONNA SINISTRA (PC) - Primo blocco di elementi */}
+          <div className="flex flex-col gap-3 w-full md:w-1/2">
             <InfoItem icon={Calendar} label="Birthday" value="October 29, 2004" />
             <InfoItem icon={MapPin} label="Location" value="Mola di Bari (BA), Italy" />
             <InfoItem icon={Phone} label="Phone" value="+39 377 549 2347" />
           </div>
-          <div className="space-y-3">
+
+          {/* COLONNA DESTRA (PC) - Secondo blocco di elementi */}
+          <div className="flex flex-col gap-3 w-full md:w-1/2">
             <InfoItem icon={Mail} label="Email" value="vannimart74@gmail.com" />
-            <InfoItem icon={GraduationCap} label="Education" value="BSc Computer Science & Automation Engineering (in progress)" />
+            <InfoItem 
+              icon={GraduationCap} 
+              label="Education" 
+              value={<>BSc CS & Automation Engineering <span className="font-bold">(in progress)</span></>} 
+            />
             <InfoItem icon={Globe} label="Languages" value="Italian (Native), English (B2), French (Basic)" />
           </div>
+
         </div>
 
         <div className="space-y-4 rounded-xl border border-border bg-card p-6 text-muted-foreground shadow-sm">
@@ -56,7 +65,7 @@ function InfoItem({
 }: { 
   icon: React.ComponentType<{ className?: string }>
   label: string
-  value: string 
+  value: React.ReactNode 
 }) {
   return (
     <div className="flex items-start gap-3">

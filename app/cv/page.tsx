@@ -28,7 +28,8 @@ export default function CVPage() {
           </p>
           <a
             href="/cv.pdf"
-            download="GiovanniPioMartello_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-medium text-primary-foreground shadow-md transition-all hover:bg-primary/90"
           >
             <Download className="h-4 w-4" />

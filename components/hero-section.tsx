@@ -1,9 +1,32 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import { Github, Linkedin, Instagram, ArrowUpRight } from "lucide-react"
 import { Typewriter } from "./typewriter"
 
 export function HeroSection() {
+  
+  // Funzione per lo scroll millimetrico calcolando l'altezza reale dell'header
+  const handleScrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault()
+    const targetId = href.replace("#", "")
+    const targetElement = document.getElementById(targetId)
+
+    if (targetElement) {
+      const header = document.querySelector("header")
+      const navHeight = header ? header.offsetHeight : 76 // Fallback standard a 76px
+
+      const rect = targetElement.getBoundingClientRect()
+      const targetPosition = window.scrollY + rect.top - navHeight
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth"
+      })
+    }
+  }
+
   return (
     <section className="relative flex h-screen flex-col items-center justify-center pt-6 md:pt-10 bg-gradient-to-br from-primary/5 via-background to-primary/10 px-6 text-center">
       <div className="mx-auto max-w-3xl">
@@ -40,16 +63,21 @@ export function HeroSection() {
         </p>
 
         <div className="mb-8 flex flex-wrap justify-center gap-3">
+          {/* Gestito lo scroll millimetrico per "Get in touch" */}
           <Link
             href="#contact"
-            className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-medium text-primary-foreground shadow-lg shadow-primary/25 transition-all hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/30"
+            onClick={(e) => handleScrollToSection(e, "#contact")}
+            className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-medium text-primary-foreground shadow-lg shadow-primary/25 transition-all hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/30 cursor-pointer"
           >
             Get in touch
             <ArrowUpRight className="h-4 w-4" />
           </Link>
+          
+          {/* Gestito lo scroll millimetrico per "Learn more" */}
           <Link
             href="#about"
-            className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-6 py-3 font-medium text-foreground shadow-sm transition-all hover:bg-secondary hover:shadow-md"
+            onClick={(e) => handleScrollToSection(e, "#about")}
+            className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-6 py-3 font-medium text-foreground shadow-sm transition-all hover:bg-secondary hover:shadow-md cursor-pointer"
           >
             Learn more
           </Link>
@@ -60,7 +88,7 @@ export function HeroSection() {
             href="https://github.com/johnh-04/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-muted-foreground transition-colors hover:text-foreground"
+            className="text-muted-foreground transition-colors hover:text-foreground cursor-pointer"
             aria-label="GitHub"
           >
             <Github className="h-6 w-6" />
@@ -69,7 +97,7 @@ export function HeroSection() {
             href="https://www.linkedin.com/in/giovanni-pio-martello/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-muted-foreground transition-colors hover:text-foreground"
+            className="text-muted-foreground transition-colors hover:text-foreground cursor-pointer"
             aria-label="LinkedIn"
           >
             <Linkedin className="h-6 w-6" />
@@ -78,7 +106,7 @@ export function HeroSection() {
             href="https://www.instagram.com/gpmartello/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-muted-foreground transition-colors hover:text-foreground"
+            className="text-muted-foreground transition-colors hover:text-foreground cursor-pointer"
             aria-label="Instagram"
           >
             <Instagram className="h-6 w-6" />

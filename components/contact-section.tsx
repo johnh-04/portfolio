@@ -12,7 +12,8 @@ export function ContactSection() {
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     setIsSubmitting(true)
-    setError(null)
+    setError(null) // 1. Pulisce l'errore all'inizio dell'invio
+    setIsSuccess(false)
 
     const formData = new FormData(e.currentTarget)
     const data = {
@@ -33,6 +34,7 @@ export function ContactSection() {
       }
 
       setIsSuccess(true)
+      setError(null) // 2. Sicurezza: se va a buon fine, l'errore deve essere nullo
       e.currentTarget.reset()
     } catch {
       setError("Failed to send message. Please try again or contact me directly via email.")
@@ -95,9 +97,11 @@ export function ContactSection() {
                 <p className="text-muted-foreground">Thank you for reaching out. I&apos;ll get back to you soon.</p>
                 <button
                   type="button"
-                  onClick={() => setIsSuccess(false)}
-                  className="mt-4 text-sm text-primary hover:underline"
-                >
+                  onClick={() => {
+                    setIsSuccess(false)
+                    setError(null)
+                  }}
+                  className="mt-4 text-sm text-primary hover:underline cursor-pointer">
                   Send another message
                 </button>
               </div>
@@ -148,8 +152,7 @@ export function ContactSection() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 font-medium text-primary-foreground shadow-lg shadow-primary/25 transition-all hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/30 disabled:cursor-not-allowed disabled:opacity-70"
-                >
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 font-medium text-primary-foreground shadow-lg shadow-primary/25 transition-all hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/30 disabled:cursor-not-allowed disabled:opacity-70 cursor-pointer">
                   {isSubmitting ? (
                     <>
                       <Loader2 className="h-4 w-4 animate-spin" />
@@ -171,16 +174,16 @@ export function ContactSection() {
   )
 }
 
-function ContactItem({ 
-  icon: Icon, 
-  label, 
-  value, 
-  href 
-}: { 
+function ContactItem({
+  icon: Icon,
+  label,
+  value,
+  href
+}: {
   icon: React.ComponentType<{ className?: string }>
   label: string
   value: string
-  href?: string 
+  href?: string
 }) {
   const content = (
     <div className="flex items-center gap-3">
@@ -205,14 +208,14 @@ function ContactItem({
   return content
 }
 
-function SocialLink({ 
-  href, 
-  icon: Icon, 
-  label 
-}: { 
+function SocialLink({
+  href,
+  icon: Icon,
+  label
+}: {
   href: string
   icon: React.ComponentType<{ className?: string }>
-  label: string 
+  label: string
 }) {
   return (
     <Link
