@@ -18,16 +18,25 @@ export function Navigation() {
   const [activeSection, setActiveSection] = useState("")
   const [scrolled, setScrolled] = useState(false)
 
+  // Blocca rigidamente lo scroll della pagina quando il menu mobile è aperto
   useEffect(() => {
-    // Prevent scroll when mobile menu is open
     if (isOpen) {
-      document.documentElement.style.overflow = 'hidden'
+      document.body.style.overflow = "hidden"
+      document.body.style.position = "fixed"
+      document.body.style.width = "100%"
+      document.body.style.height = "100%"
     } else {
-      document.documentElement.style.overflow = 'unset'
+      document.body.style.overflow = ""
+      document.body.style.position = ""
+      document.body.style.width = ""
+      document.body.style.height = ""
     }
 
     return () => {
-      document.documentElement.style.overflow = 'unset'
+      document.body.style.overflow = ""
+      document.body.style.position = ""
+      document.body.style.width = ""
+      document.body.style.height = ""
     }
   }, [isOpen])
 
@@ -42,7 +51,6 @@ export function Navigation() {
         const element = document.getElementById(section)
         if (element) {
           const rect = element.getBoundingClientRect()
-          // More strict condition: section must be more centered
           if (rect.top <= 100 && rect.bottom >= 200) {
             setActiveSection(section)
             foundActive = true
@@ -51,7 +59,6 @@ export function Navigation() {
         }
       }
 
-      // Reset active section when at the top of the page
       if (!foundActive) {
         setActiveSection("")
       }
@@ -95,7 +102,7 @@ export function Navigation() {
                   const targetElement = document.getElementById(targetId)
                   if (targetElement) {
                     const rect = targetElement.getBoundingClientRect()
-                    const offset = 120 // Offset to show section title clearly
+                    const offset = 120
                     window.scrollTo({
                       top: window.scrollY + rect.top - offset,
                       behavior: 'smooth'
@@ -124,20 +131,21 @@ export function Navigation() {
         </nav>
       </header>
 
-      {/* Mobile nav - OUTSIDE header for proper stacking */}
+      {/* Mobile nav - TOTALMENTE BLOCCATO A SCHERMO */}
       {isOpen && (
-        <div className="fixed inset-0 z-[999] bg-background flex flex-col">
+        <div className="fixed inset-0 z-[999] bg-background overscroll-none h-screen w-screen flex flex-col justify-start items-center pt-16 px-6">
 
-          {/* X button */}
+          {/* Pulsante X posizionato in alto a destra */}
           <button
             onClick={() => setIsOpen(false)}
-            className="absolute top-6 right-6 p-2 text-foreground hover:bg-secondary rounded-lg cursor-pointer"
+            className="absolute top-6 right-6 p-2 text-foreground hover:bg-secondary rounded-lg cursor-pointer z-[1000]"
           >
             <X className="h-6 w-6" />
           </button>
 
-          {/* Content */}
-          <div className="flex flex-col items-center mt-24 mb-2">
+          {/* Contenuto principale spostato verso l'alto */}
+          <div className="w-full max-w-sm flex flex-col items-center gap-8 mt-4">
+            {/* Logo */}
             <Link
               href="#"
               onClick={(e) => {
@@ -145,48 +153,51 @@ export function Navigation() {
                 setIsOpen(false)
                 window.scrollTo({ top: 0, behavior: "smooth" })
               }}
-              className="text-4xl font-extrabold tracking-wide text-primary cursor-pointer hover:opacity-80 transition"
+              className="text-4xl font-extrabold tracking-wide text-primary cursor-pointer hover:opacity-80 transition mb-2"
             >
               GPM
             </Link>
-          </div>
-          <div className="flex flex-col items-center justify-center gap-10 flex-1">
 
+            {/* Link di Navigazione */}
+            <div className="flex flex-col items-center gap-6 w-full">
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={(e) => {
+                    e.preventDefault()
+                    setIsOpen(false)
 
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={(e) => {
-                  e.preventDefault()
-                  setIsOpen(false)
+                    const targetId = item.href.replace("#", "")
+                    const el = document.getElementById(targetId)
 
-                  const targetId = item.href.replace("#", "")
-                  const el = document.getElementById(targetId)
+                    if (el) {
+                      setTimeout(() => {
+                        el.scrollIntoView({ behavior: "smooth" })
+                      }, 100)
+                    }
+                  }}
+                  className={`text-xl font-medium transition-colors ${activeSection === item.href.replace("#", "")
+                    ? "text-primary"
+                    : "text-muted-foreground hover:text-foreground"
+                    }`}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
 
-                  if (el) {
-                    setTimeout(() => {
-                      el.scrollIntoView({ behavior: "smooth" })
-                    }, 300)
-                  }
-                }}
-                className={`text-xl font-medium transition-colors ${activeSection === item.href.replace("#", "")
-                  ? "text-primary"
-                  : "text-muted-foreground hover:text-foreground"
-                  }`}
-              >
-                {item.label}
-              </Link>
-            ))}
-
+            {/* Bottone CV */}
             <Link
               href="/cv"
               onClick={() => setIsOpen(false)}
-              className="mt-6 w-[80%] max-w-sm rounded-lg bg-primary px-6 py-3 text-center text-lg font-medium text-primary-foreground"
+              className="mt-4 w-[85%] rounded-lg bg-primary px-6 py-3 text-center text-lg font-medium text-primary-foreground shadow-sm"
             >
               CV
             </Link>
-            <div className="flex items-center justify-center gap-6 mt-4">
+
+            {/* Icone Social */}
+            <div className="flex items-center justify-center gap-6 mt-2">
               <Link
                 href="https://github.com/johnh-04/"
                 target="_blank"
