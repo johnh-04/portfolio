@@ -7,7 +7,9 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-card px-6 py-8">
       <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 md:flex-row">
-        <div>
+        
+        {/* Centrato di default (mobile) e allineato a sinistra da md in poi */}
+        <div className="text-center md:text-left">
           <p className="text-lg font-semibold text-foreground">Giovanni Pio Martello</p>
           <p className="text-sm text-muted-foreground">Always learning. Always building.</p>
         </div>
